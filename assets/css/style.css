@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Poppins';
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+
+    height: 5250px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1253px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #1C1B21 92.19%), url(../image/backgrounds/head-bg.png);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 42px 95px 0 95px;
+}
+
+
+
+.head-images {
+    width: 230px;
+    height: 60px;
+
+    text-align: center;
+}
+
+.head__image-1 {
+    width: 60px;
+}
+
+.header__content {
+    margin: 312px 0 10px 0;
+}
+
+.head__suptitle {
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+}
+
+.head__title {
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 150px;
+    color: rgb(125, 216, 208);
+}
+
+.player {
+    margin-top: 54px;
+
+    display: flex;
+    align-items: center;
+}
+
+.pause__player {
+    width: 25px;
+}
+
+.player__line {
+    width: 950px;
+    height: 3px;
+    margin-left: 30px;
+
+    background-color: #fff;
+}
+
+.player__time {
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* Nav */
+
+.nav__link {
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link:last-child {
+    padding-right: 30px;
+}
+
+.nav__link:hover {
+    color: rgb(23, 170, 255);
+    text-decoration: underline;
+}
+
+/* Card */
+
+.card {
+    margin-top: 143px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__news {
+     width: 33%;
+}
+
+.card-background-1 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+
+    background: url(../image/card/1.png) left center no-repeat;
+    background-size: cover;
+}
+
+.card-background-2 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+
+    background: url(../image/card/2.png) left center no-repeat;
+    background-size: cover;
+}
+
+.card-background-3 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+
+    background: url(../image/card/3.png) left center no-repeat;
+    background-size: cover;
+}
+
+.card__news  p {
+    margin-top: 218px;
+    padding: 15px 15px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+
+    background: #7a66cc9f;
+    border-radius: 20px 0px;
+}
