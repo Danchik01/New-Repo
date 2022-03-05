@@ -6,21 +6,34 @@ body {
     line-height: 1.6;
     color: #333;
 
-    height: 3250px;
+    background: #0d0d13;
 }
 
 *,
 *:before,
 *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    color: #fff;
+}
+
+li {
+    color: #fff;
+    list-style-type: none;
+}
+
+ul, ol {
+    list-style-type: none;
 }
 
 p {
     margin: 0;
+    color: #fff;
 }
 
 /* Container */
@@ -29,6 +42,8 @@ p {
     width: 100%;
     max-width: 1253px;
     margin: 0 auto;
+
+    position: relative;
 }
 
 
@@ -37,9 +52,12 @@ p {
 .header {
     display: flex;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #0d0d13 92.19%), url(../image/backgrounds/head-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header__inner {
@@ -64,6 +82,9 @@ p {
 }
 
 .header__content {
+    display: flex;
+    flex-direction: column;
+
     margin: 312px 0 10px 0;
 }
 
@@ -133,41 +154,40 @@ p {
 /* Card */
 
 .card {
-    margin-top: 143px;
+    position: absolute;
+    width: 100%;
+    top: -400px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card__news {
-     width: 33%;
+    max-width: 350px;
+    width: 100%;
 }
 
-.card-background-1 {
-    position: absolute;
-    width: 350px;
-    height: 300px;
-
-    background: url(../image/card/1.png) left center no-repeat;
-    background-size: cover;
+.card__news:not(:last-child) {
+    margin-right: 30px;
 }
 
-.card-background-2 {
-    position: absolute;
-    width: 350px;
-    height: 300px;
-
-    background: url(../image/card/2.png) left center no-repeat;
+.card__news:first-child {
+    background: url(../image/card/1.png)no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
-.card-background-3 {
-    position: absolute;
-    width: 350px;
-    height: 300px;
-
-    background: url(../image/card/3.png) left center no-repeat;
+.card__news:nth-child(2) {
+    background: url(../image/card/2.png)no-repeat;
     background-size: cover;
+    background-position: center;
+}
+
+.card__news:last-child {
+    background: url(../image/card/3.png)no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card__news  p {
@@ -187,152 +207,116 @@ p {
 .content {
     width: 100%;
     height: 100%;
-    background: #0d0d13;
+    
 }
 
 /* About Us */
 
-.about_us {
-    padding-top: 150px;
-}
-
-.about_us__header {
+.about-us {
     display: flex;
-    margin-top: 200px;
-    align-items: center;
-
-    width: 400px;
-    height: 72px;
-}
-
-.about_us__logo {
-    width: 64px;
-    height: 41px;
-    margin-right: 30px;
-    vertical-align: top;
-}
-
-.about_us__image {
-    max-width:100%;
-    height:auto;
-}
-
-.about_us__title {
-    color: #fff;
-    font-weight: bold;
-    font-size: 40px;
+    padding-top: 180px;
 }
 
 .about_us__content {
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
+}
 
-    flex-wrap: wrap;
-    width: 1110px;
-    height: 494px;
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
 }
 
 .about_us__text {
+    padding: 50px 0;
+}
+
+.about_us__image-box {
+    display: flex;
+    position: relative;
     width: 50%;
-    height: 320px;
-    margin-top: 60px;
+
+    padding-left: 50px;
 }
 
-.about_us__text p {
-    font-size: 16px;
-    line-height: 24px;
-    color: rgb(165, 165, 165);
-}
-
-.about_us__card {
-    padding-left: 100px;
-    width: 445px;
-    height: 466px;
-}
-
-.about_us__card-1 {
+.about_us__img:first-child {
     position: absolute;
 
-    width: 350px;
-    height: 400px;
-    background: url(../image/Aboutus/1.png) no-repeat;
-    border-radius: 30px 0px;
+    right: 95px;
+    bottom: 66px;
+
     z-index: 1;
 }
 
-.about_us__card-2 {
-    width: 350px;
-    height: 400px;
-    transform: translate(95px, 66px);
+.about_us__img:last-child {
+    position: absolute;
 
-    background: url(../image/Aboutus/2.png) no-repeat;
-    border-radius: 30px 0px;
+    right: 0;
+    bottom: 0;
 }
 
-.about_us__have {
+.about-us__items-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    width: 500px;
-    height: 100px;
 }
 
-.about_us__have-1 {
-    display: flex;
-    margin: 0 15px 0 15px;
+.about_us__items:not(:last-child) {
+    margin-right: 90px;
+}
+
+.about_us__item::before {
+    content: "";
+    display: inline-block;
 
     width: 30px;
     height: 30px;
-
     background: #7A66CC;
     border-radius: 10px 0px;
 }
 
-.about_us__have-ic {
-    font-weight: 600;
-    font-size: 18px;
+.about_us__item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    padding-bottom: 33px;
 }
+
 
 /* Mtv */
 
-.mtv_container {
-    margin-top: 300px;
-    margin-right: 0;
-    width: 1110px;
-    height: 483px;
+.mtv__body {
+    margin-top: 350px;
+
+    position: relative;
+
+
+    border: 1px solid #FFFFFF;
+    border-radius: 30px 0px;
+
+    padding: 50px 80px;
 }
 
 .mtv__content {
-    display: inline;
-    width: 1100px;
-    height: 483px;
+    width: 100%;
+    max-width: 520px;
 }
 
 .mtv__text {
-    width: 520px;
-    height: 136px;
+    border-bottom: 1px solid #fff;
+
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
 }
 
-.mtv__text p {
-    font-size: 18px;
-    line-height: 27px;
+.mtv-image {
+    position: absolute;
+    right: 80px;
+    top: -25%;
 }
 
 .mtv__link {
-    font-size: 18px;
     color: #7A66CC;
-
-    text-decoration: none;
-}
-
-.mtv__link:hover {
-    text-decoration: underline;
-}
-
-.mtv__bg {
-    background: url(../image/mtv/Rectangle\ 19.png) right top no-repeat;
-
-    width: 370px;
-    height: 480px;
+    font-weight: bold;
+    font-size: 18px;
 }
