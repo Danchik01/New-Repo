@@ -68,7 +68,7 @@ p {
 }
 
 .head__suptitle {
-
+    display: inline-block;
     font-weight: bold;
     font-size: 48px;
     line-height: 72px;
@@ -76,6 +76,7 @@ p {
 }
 
 .head__title {
+    display: inline-flex;
     font-weight: bold;
     font-size: 100px;
     line-height: 150px;
@@ -198,8 +199,8 @@ p {
 .about_us__header {
     display: flex;
     margin-top: 200px;
-
     align-items: center;
+
     width: 400px;
     height: 72px;
 }
@@ -268,3 +269,70 @@ p {
     border-radius: 30px 0px;
 }
 
+.about_us__have {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: 500px;
+    height: 100px;
+}
+
+.about_us__have-1 {
+    display: flex;
+    margin: 0 15px 0 15px;
+
+    width: 30px;
+    height: 30px;
+
+    background: #7A66CC;
+    border-radius: 10px 0px;
+}
+
+.about_us__have-ic {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Mtv */
+
+.mtv_container {
+    margin-top: 300px;
+    margin-right: 0;
+    width: 1110px;
+    height: 483px;
+}
+
+.mtv__content {
+    display: inline;
+    width: 1100px;
+    height: 483px;
+}
+
+.mtv__text {
+    width: 520px;
+    height: 136px;
+}
+
+.mtv__text p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.mtv__link {
+    font-size: 18px;
+    color: #7A66CC;
+
+    text-decoration: none;
+}
+
+.mtv__link:hover {
+    text-decoration: underline;
+}
+
+.mtv__bg {
+    background: url(../image/mtv/Rectangle\ 19.png) right top no-repeat;
+
+    width: 370px;
+    height: 480px;
+}
