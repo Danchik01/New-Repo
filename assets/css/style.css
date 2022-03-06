@@ -320,3 +320,192 @@ p {
     font-weight: bold;
     font-size: 18px;
 }
+
+/* Tracks */
+
+.tracks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    margin-top: 350px;
+}
+
+.track__title {
+    font-weight: bold;
+    font-size: 48px;
+    
+    margin-bottom: 65px;
+}
+
+.track__logo {
+    width: 100%;
+    max-width: 510px;
+}
+
+.track__logo-image {
+    width: 500px;
+    padding-top: 20px;
+}
+
+.track__body {
+    padding-left: 60px;
+}
+
+.track__palyer {
+    display: flex;
+    align-items: center;
+}
+
+.track__player-pause-box {
+    margin-right: 40px;
+}
+
+.track__player-pause {
+    width: 25px;
+    vertical-align: bottom;
+}
+
+.track__player-line {
+    width: 400px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.track__player-time {
+    color: #fff;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.track__music {
+    display: block;
+}
+
+.track__song-name {
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.track__song-name:first-child {
+    margin-top: 63px;
+}
+
+.track__song-name:last-child {
+    margin-bottom: 50px;
+}
+
+.track__song-name:first-child::before {
+    content: "01";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__song-name:nth-child(2)::before {
+    content: "02";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__song-name:nth-child(3)::before {
+    content: "03";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__song-name:nth-child(4)::before {
+    content: "04";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__song-name:nth-child(5)::before {
+    content: "05";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__song-name:last-child::before {
+    content: "06";
+    padding-right: 20px;
+    opacity: 0.5;
+}
+
+.track__follow {
+    display: flex;
+    align-items: center;
+}
+
+.track-follow__text {
+    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.track-follow__links {
+    display: flex;
+
+    width: 100%;
+    max-width: 300px;
+
+    margin-left: 40px;
+}
+
+.track-follow__links-itunes {
+    margin-left: 30px;
+}
+
+.track-follow__icon {
+    width: 30px;
+    color: #fff;
+}
+
+.track-follow__link {
+    display: flex;
+    align-content: center;
+
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Many Cards */
+
+.many-cards {
+    margin: 200px 0;
+}
+
+.many-cards__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.many-cards__cards-box {
+    display: flex;
+    padding: 0;
+}
+
+.many-cards__image {
+    padding: 0 30px 30px 0;
+}
+
+.many-cards__image-box {
+    position: relative;
+    text-align: center;
+}
+
+.many-cards__text {
+    position: absolute;
+    top: 68%;
+    left: 20%;
+
+    font-weight: bold;
+    font-size: 24px;
+    color: #7A66CC;
+}
+
+
