@@ -466,7 +466,7 @@ p {
 /* Many-Cards */
 
 .many-cards {
-    
+
 }
 
 .many-cards__block {
@@ -477,6 +477,8 @@ p {
     display: flex;
 }
 
-.many-cards__card {
+.many-cards__image {
     
 }
+
+
