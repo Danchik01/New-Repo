@@ -510,24 +510,41 @@ p {
 
 .ticket-cards {
     display: flex;
-    margin: 200px 0;
-}
+    
+    margin-top: 200px;
 
-.ticked-cards__body {
     width: 100%;
     max-width: 1270px;
 }
 
-.ticked-card {
+.ticket-cards__body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1110px;
+
+    margin: 0 auto;
+}
+
+.ticket-cards__block {
+    margin-left: 30px;
+}
+
+.ticket-cards__block:first-child {
+    margin-left: 0;
+}
+
+.ticket-card {
     display: inline-block;
     width: 100%;
     max-width: 350px;
     max-height: 500px;
-
-    margin-left: 80px;
+    
+    
     background: #2F2B2B;
     border-radius: 30px 0px;
 }
+
 
 .ticket-card__title {
     margin: 30px 0 0 35px;
@@ -567,8 +584,102 @@ p {
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
-
 }
 
 
+/* Footer */
+
+.footer {
+    display: flex;
+
+    margin-top: 180px;
+    margin-bottom: 40px;
+}
+
+.footer-body {
+    display: inline-block;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 100%;
+    max-width: 270px;
+
+    margin: 0 auto;
+}
+
+.footer-logo__image:first-child {
+    width: 80px;
+}
+
+.footer-logo__image:last-child {
+    width: 180px;
+}
+
+.footer-author {
+    display: flex;
+    width: 100%;
+    max-width: 533px;
+    margin-top: 66px;
+
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.footer-author__1 {
+    margin-right: 30px;
+
+    max-width: 199px;
+
+    font-weight: 600;
+    text-align: right;
+}
+
+.footer-author__2 {
+    max-width: 304px;
+    
+}
+
+.footer-links {
+    margin-top: 80px;
+}
+
+.footer-links__box {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+.footer-links__link {
+    max-height: 40px;
+
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.footer-links__link:last-child {
+    padding-right: 0;
+}
+
+.footer-links-image {
+    width: 40px;
+}
+
+.footer-copyright {
+    margin-top: 100px;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
 
