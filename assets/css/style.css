@@ -339,14 +339,12 @@ p {
     max-width: 510px;
 }
 
-<<<<<<< HEAD
+
 .track__logo-image {
     width: 500px;
     padding-top: 20px;
 }
 
-=======
->>>>>>> dev
 .track__body {
     padding-left: 60px;
 }
@@ -471,7 +469,6 @@ p {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* Many Cards */
 
 .many-cards {
@@ -482,21 +479,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-=======
-/* Many-Cards */
-
-.many-cards {
-
-}
-
-.many-cards__block {
-    
->>>>>>> dev
 }
 
 .many-cards__cards-box {
     display: flex;
-<<<<<<< HEAD
     padding: 0;
 }
 
@@ -581,12 +567,8 @@ p {
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
-=======
+
 }
 
-.many-cards__image {
-    
->>>>>>> dev
-}
 
 
