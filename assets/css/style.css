@@ -1,4 +1,6 @@
 body {
+    min-width: 1253px;
+
     margin: 0;
     font-family: 'Poppins';
 
@@ -38,9 +40,9 @@ p {
 /* Container */
 
 .container {
-    width: 100%;
-    max-width: 1253px;
+    max-width: 1323px;
     margin: 0 auto;
+    padding: 0 35px;
 
     position: relative;
 }
@@ -51,7 +53,6 @@ p {
 .header {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #0d0d13 92.19%), url(../image/backgrounds/head-bg.png);
@@ -109,7 +110,7 @@ p {
 }
 
 .pause__player {
-    width: 25px;
+    max-width: 25px;
 }
 
 .player__line {
@@ -128,7 +129,6 @@ p {
 /* Nav */
 
 .nav__link {
-
     display: inline-block;
     vertical-align: top;
     margin: 0 25px;
@@ -151,8 +151,7 @@ p {
 /* Card */
 
 .card {
-   margin-top: 140px;
-    width: 100%;
+    margin-top: 140px;
     top: -400px;
 
     display: flex;
@@ -204,7 +203,6 @@ p {
 .content {
     width: 100%;
     height: 100%;
-    
 }
 
 /* About Us */
@@ -624,7 +622,7 @@ p {
 }
 
 .footer-logo__image:first-child {
-    width: 80px;
+    width: 70px;
 }
 
 .footer-logo__image:last-child {
@@ -684,8 +682,6 @@ p {
 .footer-links-image {
     width: 40px;
 }
-
-
 
 .footer-copyright {
     margin-top: 100px;
